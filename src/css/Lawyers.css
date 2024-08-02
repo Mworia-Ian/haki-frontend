@@ -1,46 +1,105 @@
+.sidebar {
+    height: 100vh;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    z-index: 1000;
+    transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+    width: 50px;
+}
+
+.sidebar .nav-link {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f1f3f5;
+}
+
+.sidebar .fa-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.sidebar-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.sidebar .nav {
+    margin-top: 20px;
+}
+
+.collapsed .nav-link {
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.collapsed .nav-link .fa-icon {
+    margin-right: 0;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
 .card {
     width: 350px;
     height: 260px;
-    background-image: linear-gradient(144deg,#914F1E, #944041 60%);
+    background-image: linear-gradient(144deg, #914F1E, #944041 60%);
     border: none;
     border-radius: 10px;
     padding-top: 10px;
     position: relative;
-    margin: auto;
+    margin: 0px 0px 0px 100px;
     font-family: inherit;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  }
-  
-  .card span {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card span {
     font-weight: 600;
     color: white;
     text-align: center;
     display: block;
     padding-top: 10px;
     font-size: 1.3em;
-  }
-  
-  .card .job {
+}
+
+.card .job {
     font-weight: 400;
     color: white;
     display: block;
     text-align: center;
     padding-top: 5px;
     font-size: 1em;
-  }
-  
-  .card .img {
+}
+
+.card .img {
     width: 100px;
     height: 100px;
     background: #e8e8e8;
     border-radius: 100%;
     margin: auto;
     margin-top: 20px;
-  }
-  
-  .card button {
+}
+
+.card button {
     padding: 8px 25px;
     display: block;
     margin: auto;
@@ -50,31 +109,31 @@
     background: #e8e8e8;
     color: #111111;
     font-weight: 600;
-  }
-  
-  .card button:hover {
+}
+
+.card button:hover {
     background: #212121;
     color: #ffffff;
-  }
-  
-  .custom-card {
+}
+
+.custom-card {
     height: 100%;
     display: flex;
     flex-direction: column;
-  }
-  
-  .custom-card-body {
+}
+
+.custom-card-body {
     flex: 1;
     color: white !important;
     text-align: center;
-  }
-  
-  .custom-card-img {
+}
+
+.custom-card-img {
     object-fit: cover;
-    width: 250px; 
-    height: 250px; 
-    border-radius: 100%; 
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
     margin: auto;
     margin-top: 10px;
     border: 5px solid #e8e8e8;
-  }
+}

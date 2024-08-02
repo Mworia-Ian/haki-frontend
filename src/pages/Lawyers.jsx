@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LawyersCard from "../components/LawyersCard";
+import LawyersNavbar from "../components/LawyersNavbar";
+import { Link } from "react-router-dom";
 
 function Lawyers({ lawyers = [] }) {
   return (
@@ -16,8 +18,10 @@ function Lawyers({ lawyers = [] }) {
           <Col>
             <p>No lawyers available.</p>
           </Col>
+          
         )}
       </Row>
+      <LawyersNavbar />
     </Container>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Lawyers from './pages/Lawyers';
-// import LawyerDetails from './components/LawyersDetails';
+import LawyerDetails from './components/LawyersDetails';
 
 const dummyLawyers = [
   {
@@ -100,7 +100,7 @@ function App() {
   return (
     <>
       <Lawyers lawyers={dummyLawyers} />
-      {/* <LawyerDetails lawyesr={dummyLawyers} /> */}
+      <LawyerDetails lawyesr={dummyLawyers} />
     </>
   );
 }
