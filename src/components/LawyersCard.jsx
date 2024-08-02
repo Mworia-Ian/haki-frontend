@@ -13,7 +13,9 @@ const LawyersCard = ({ lawyer }) => {
       />
       <Card.Body className="custom-card-body" style={{ fontSize: "1.1rem" }}>
         <Card.Title>{lawyer.name}</Card.Title>
-        <Card.Text>{lawyer.description.substring(0, 100)}...</Card.Text>
+        <Card.Text>Years of Experience: {lawyer.experience} years</Card.Text>
+        <Card.Text>Rate: ${lawyer.rate_per_hour}/hour</Card.Text>
+        <Card.Text>Specialization: {lawyer.specialization}</Card.Text>
         <div className="d-flex">
           <div className="w-100">
             <Link to={`/lawyers/${lawyer.id}`} className="d-block">
