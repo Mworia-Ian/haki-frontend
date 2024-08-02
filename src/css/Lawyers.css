@@ -8,6 +8,8 @@
     border-right: 1px solid #dee2e6;
     z-index: 1000;
     transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar.collapsed {
@@ -15,15 +17,16 @@
 }
 
 .sidebar .nav-link {
-    font-size: 1.1rem;
+    color: black;
+    font-size: 1.1rem; 
     display: flex;
     align-items: center;
+    margin: 0;
     padding: 10px 20px;
-    color: black;
 }
 
 .sidebar .nav-link:hover {
-    background-color: #f1f3f5;
+    background-color: #bc703a;
 }
 
 .sidebar .fa-icon {
@@ -35,13 +38,14 @@
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
+    position: absolute;
     width: 100%;
     text-align: left;
     padding: 10px 20px;
 }
 
 .sidebar .nav {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .collapsed .nav-link {
