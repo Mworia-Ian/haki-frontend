@@ -10,7 +10,7 @@ export default function LoginPage() {
                     <Form.Control
                         required
                         type="email"
-                        placeholder="E-mail"
+                        placeholder="E-mail ID"
                         className="input"
                     />
                 </Form.Group>
@@ -22,12 +22,13 @@ export default function LoginPage() {
                         className="input"
                     />
                 </Form.Group>
-                <Form.Text className="forgot-password">
-                    <a href="#">Forgot Password ?</a>
-                </Form.Text>
+                
                 <Button className="login-button" type="submit">
                     Log In
                 </Button>
+                <Form.Text className="forgot-password">
+                    <a href="#">Reset Password ?</a>
+                </Form.Text>
             </Form>
             <div className="social-account-container">
                 <span className="title">Or Log in with</span>
