@@ -1,7 +1,68 @@
-import React from "react";
+import React, { useState }  from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import toast from "react-hot-toast";
+import { Link, useNavigate } from "react-router-dom";
 import { Form, Button, Container } from 'react-bootstrap';
 import "./login.css";
+
+const schema = z.object({
+    email: z
+      .string()
+      .email({ message: "Enter a valid email address" })
+      .min(1, { message: "Email address is required" }),
+    password: z.string().min(1, { message: "Password is required" }),
+  });
+
 export default function LoginPage() {
+    
+    const form = useForm({
+        resolver: zodResolver(schema),
+        defaultValues: {
+          email: "",
+          password: "",
+        },
+      });
+    
+      const [isLoading, setIsLoading] = useState(false);
+    
+      const navigate = useNavigate();
+    
+      const onSubmit = async (values) => {
+        setIsLoading(true);
+        await fetch(`${BASE_URL}/login`, {
+          method: "POST",
+          body: JSON.stringify(values),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            setIsLoading(false);
+            if (data.status === "fail") {
+              toast.error(data.message);
+            } else {
+              const user = data.user;
+              const accessToken = data.access_token;
+    
+              // save user session to local storage
+              localStorage.setItem(
+                "session",
+                JSON.stringify({ user, accessToken })
+              );
+              toast.success(data.message);
+    
+              navigate("/");
+            }
+          })
+          .catch((err) => {
+            setIsLoading(false);
+            console.log(err);
+          });
+      };
+    
     return (
         <Container className="container">
             <div className="heading">Log In</div>
