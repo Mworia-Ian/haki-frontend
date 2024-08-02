@@ -122,21 +122,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e9ecef;
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
     cursor: pointer;
 }
-/* 
-.social-button.google {
-    background-color: #db4437;
+.social-button:hover {
+    background-color: #d3d3d3;
+    transform: scale(1.2);
+    }
+.social-button:active{
+    transform: scale(0.9);
 }
-
-.social-button.apple {
-    background-color: #000;
-}
-
-.social-button.twitter {
-    background-color: #1da1f2;
-} */
 
 /* Social Button SVG */
 .svg {
