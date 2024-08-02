@@ -29,10 +29,10 @@ const LawyersNavbar = () => {
           <FontAwesomeIcon icon={faGavel} className="fa-icon" />
           {!isCollapsed && 'Lawyers'}
         </Nav.Link>
-        <Nav.Link as={Link} to="/profile">
+        {/* <Nav.Link as={Link} to="/profile">
           <FontAwesomeIcon icon={faUser} className="fa-icon" />
           {!isCollapsed && 'Profile'}
-        </Nav.Link>
+        </Nav.Link> */}
       </Nav>
       <Nav className="flex-column p-3 mt-auto">
         <Nav.Link as={Link} to="/logout">
