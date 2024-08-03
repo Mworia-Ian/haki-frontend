@@ -1,0 +1,25 @@
+.footer{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.footer a{
+    color: #202022;
+    font-size: 18px;
+}
+.copy{
+    background: #ec9f68;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+}
+.logo{
+    color: #fff;
+    font-size: 3rem;
+    margin-right: auto;
+}
+.logo span{
+    color: #ec9f68;
+}
