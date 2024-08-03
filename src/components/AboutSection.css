@@ -1,0 +1,70 @@
+/* Add styles specific to the AboutSection component */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    margin-top: 5rem;
+    gap: 2rem;
+    background: rgba(109, 55, 5, 0.2);
+}
+.about .image img {
+    height: 25rem;
+    width: 25rem;
+    border-radius: .5rem;
+    object-fit: cover;
+    font-size: 1 1 28rem;
+    text-align: center;
+    position: relative;
+}
+.about .image::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #ec9f68;
+    height: 10rem;
+    width: 10rem;
+    top: -15px;left: -15px;
+}
+
+.about .content {
+    flex: 1 1 28rem;
+}
+.about .content span {
+    font-size: 50px;
+    color: #9c4f07;
+    text-decoration: underline;
+    
+}
+.about .content h1 {
+    font-size: 2rem;
+    color: wheat;
+}
+.about .content p {
+    font-size: 1.3rem;
+    color: whitesmoke;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+.about .content .award {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    gap: .2rem;
+    margin: 1rem 0;
+}
+.about .content .award .box {
+    text-align: center;
+    padding: .8rem;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #aaa;
+}
+.about .award .box h3 {
+    font-size: 2rem;
+    color: #6D3705;
+}
+.about .award .box p {
+    font-size: 1.4rem;
+    color: #333;
+}

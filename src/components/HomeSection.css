@@ -70,7 +70,8 @@
     margin-top: 5rem;
     padding: 0 20px;
     position: absolute;
-    left: 0;right: 0;
+    left: 0;
+    right: 0;
     bottom: -50px;
     text-transform: capitalize;
 }
@@ -93,74 +94,20 @@
     font-size: 1.4rem;
     color: #333;
 }
-@media (max-width: 769px) {
-    .home{
-        height: 25rem;
-    }
-    .home header{
-        padding: 10px;
-    }
-    header .btn{
-        display: none;
-    }
-    header .menubtn{
-        display: block;
-    }
-    header .navbar{
-        position: absolute;
-        top: 10%; left: 0; right: 0;
-        background: #fff;
-        padding: 10px;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: .2s linear;
-    }
-    header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    header .navbar a{
-        display: block;
-        color: #202022;
-        font-size: 18px;
-        margin: 10px 0;
-    }
-    header .navbar a::before{
-        display: none;
-    }
-    .home .wrapper{
-        text-align: center;
-        margin-top: 8rem;
-    }
-    .home .wrapper h1{
-        font-size: 1.2rem;
-    }
-    .home .wrapper p{
-        font-size: .8rem;
-        width: 90%;
-    }
-    .home .status{
-        display: none;
-    }
-    .about,
-    .services,
-    .reviews,
-    .contactinfo,
-    .footer{
-        padding: 10px;
-    }
-    .about{
-        margin-top: 2rem;
-    }
-    .about .image img{
-        width: 100%;
-        object-fit: cover;
-    }
-    .about .image::before{
-        display: none;
-    }
-    .contact form{
-        width: 90%;
-    }
-    .footer a{
-        font-size: 12px;
-    }
+.btn {
+    padding: 10px 15px;
+    background: #ec9f68;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    gap: 1rem;
+    transform: 1.2;
+}
+
+.btn:hover {
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
 }
