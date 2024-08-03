@@ -1221,14 +1221,14 @@ const Modal = ({ isOpen, onClose }) => {
           </p>
           <span>Sed nimis multa.</span>
           <p>
-            Nec vero alia sunt quaerenda contra Carneadeam illam sententiam...
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dicta quis, delectus quos deleniti possimus fugiat similique facilis provident laudantium? Veritatis doloribus provident, debitis alias doloremque velit laborum mollitia necessitatibus!
           </p>
         </section>
         <footer className="modal-container-footer">
-          <button className="button is-ghost" onClick={onClose}>
-            Decline
-          </button>
-          <button className="button is-primary">Accept</button>
+          {/* <button className="button is-ghost" onClick={onClose}>
+            Close
+          </button> */}
+          <button className="button is-primary"onClick={onClose}>Close</button>
         </footer>
       </article>
     </div>
