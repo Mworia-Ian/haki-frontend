@@ -5,7 +5,6 @@ import '../css/Lawyers.css';
 const LawyersSearch = ({ onSearch }) => {
   const [query, setQuery] = useState('');
  
-
   const handleInputChange = (e) => {
     setQuery(e.target.value);
   };
@@ -13,7 +12,6 @@ const LawyersSearch = ({ onSearch }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSearch(query);
-    // You might have code to handle showing alerts here
   };
 
   return (
@@ -26,8 +24,6 @@ const LawyersSearch = ({ onSearch }) => {
         onChange={handleInputChange}
       />
       <Button variant="outline-success" type="submit" className="custom-search-button">Search</Button>
-      {/* Remove or comment out this alert if it's here */}
-
     </Form>
   );
 };

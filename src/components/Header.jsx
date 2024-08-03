@@ -4,15 +4,17 @@ import "../css/Lawyers.css";
 
 function Header() {
   return (
-    <Container className="header">
+    <div className="header">
+    <Container>
       <Row className="justify-content-center">
         <Col xs="auto">
-          <h1 className='text-center' style={{ textDecoration: "underline" }}>
+          <h1 className="text-center" style={{ color: 'black', textDecoration: 'underline' }}>
             LAWYERS
           </h1>
         </Col>
       </Row>
     </Container>
+  </div>
   );
 }
 

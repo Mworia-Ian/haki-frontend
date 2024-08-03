@@ -1,13 +1,29 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-  
-  
+.header {
+    background-color: white;
+    /* background: linear-gradient(to right, #914F1E, #944041); */
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
 .sidebar {
     height: 100vh;
-    width: 150px;
+    width: 180px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #f8f9fa;
+    background: linear-gradient(to right, #914F1E, #944041);
     border-right: 1px solid #dee2e6;
     z-index: 1000;
     transition: width 0.3s;
@@ -20,8 +36,8 @@
 }
 
 .sidebar .nav-link {
-    color: black;
-    font-size: 1.1rem; 
+    color: white; /* Set text color to white */
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     margin: 0;
@@ -29,12 +45,14 @@
 }
 
 .sidebar .nav-link:hover {
-    background-color: #bc703a;
+    background-color: #eecaaf; /* Background color on hover */
 }
 
 .sidebar .fa-icon {
     font-size: 1.5rem;
     margin-right: 10px;
+    transition: color 0.3s;
+    color: white; /* Set icon color to white */
 }
 
 .sidebar-toggle {
@@ -45,6 +63,7 @@
     width: 100%;
     text-align: left;
     padding: 10px 20px;
+    color: white;
 }
 
 .sidebar .nav {
@@ -63,6 +82,7 @@
 .mt-auto {
     margin-top: auto;
 }
+
 
 .card {
     width: 350px;
@@ -144,6 +164,7 @@
     margin-top: 10px;
     border: 5px solid #e8e8e8;
 }
+
 /* 
 .search-column {
     background-color: #f8f9fa;
@@ -175,27 +196,27 @@
     flex: 1;
   }
    */
-   .search-container {
+.search-container {
     display: flex;
     align-items: flex-start;
     margin-left: 1000px;
-  }
-  
-  .search {
+}
+
+.search {
     display: flex;
     flex-direction: row;
     width: 100%;
-  }
-  
-  .search input[type="text"] {
+}
+
+.search input[type="text"] {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .search button[type="submit"] {
+}
+
+.search button[type="submit"] {
     /* background-color: #4e99e9 ; */
     background-image: linear-gradient(144deg, #914F1E, #944041 60%);
     border: none;
@@ -206,11 +227,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: -60px;
     transition: .9s ease;
-  }
-  
-  .search button[type="submit"]:hover {
+}
+
+.search button[type="submit"]:hover {
     transform: scale(1.1);
     color: rgb(255, 255, 255);
     background-color: #4e99e9;
-  }
-  
+}
