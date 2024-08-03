@@ -3,7 +3,7 @@ import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faGavel, faUser, faBars, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
-import '../css/Lawyers.css'; // Ensure this CSS file is created and properly linked
+import '../css/Lawyers.css';
 
 const LawyersNavbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
