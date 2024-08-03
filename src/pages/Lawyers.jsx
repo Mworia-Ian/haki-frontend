@@ -36,8 +36,8 @@ function Lawyers({ lawyers = [] }) {
             </Col>
           ))
         ) : (
-          <Col>
-            <p>No lawyers found.</p>
+          <Col className="d-flex justify-content-center align-items-center" style={{ height: '50vh' }}>
+            <p className="text-center" style={{ fontSize: '2.0rem' }}>No lawyers found.</p>
           </Col>
         )}
       </Row>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Container, Row, Col, Button, Modal, Alert } from "react-bootstrap";
+import { Container, Row, Col, Button, Modal } from "react-bootstrap";
 
 function LawyerDetails({ lawyer }) {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ function LawyerDetails({ lawyer }) {
   if (!lawyer) {
     return (
       <Container className="mt-5">
-        <Alert variant="warning">Lawyer not found</Alert>
+        <p className="text-white">Lawyer not found.</p>
       </Container>
     );
   }
