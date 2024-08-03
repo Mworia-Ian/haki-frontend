@@ -1,38 +1,36 @@
 import React from 'react'
 import './home.css';
-function HomePage() {
+import Header from '../../components/Header';
+
+const HomePage = () => {
     return (
-        <div className="landing-page">
-          <header className="hero">
-            <div className="hero-content">
-              <h1>Welcome to Our Awesome Product</h1>
-              <p>Your solution for [describe benefit].</p>
-              <a href="#signup" className="cta-button">Get Started</a>
+        <section className="home">
+          <div className="wrapper">
+            <h1>Legal Counsels for your business</h1>
+            <p>We help businesses navigate the legal landscape and grow their operations.</p>
+            <div className="buttons">
+              <a href="#" className="btn">Contact us</a>
+              <a href="#" className="btn2">About us</a>
             </div>
-          </header>
-          
-          <section className="features">
-            <h2>Features</h2>
-            <div className="feature">
-              <h3>Feature One</h3>
-              <p>Description of feature one.</p>
+          </div>
+          <div className="status">
+            <div className="box-container">
+              <div className="box">
+                <h2>20+</h2>
+                <p>years in this field</p>
+              </div>
+              <div className="box">
+                <h2>100+</h2>
+                <p>Legal issues for both small and large businesses</p>
+              </div>
+              <div className="box">
+                <h2>98%</h2>
+                <p>success rate in resolving favorable settlement for clients</p>
+              </div>
             </div>
-            <div className="feature">
-              <h3>Feature Two</h3>
-              <p>Description of feature two.</p>
-            </div>
-            <div className="feature">
-              <h3>Feature Three</h3>
-              <p>Description of feature three.</p>
-            </div>
-          </section>
-          
-          
-          <footer className="footer">
-            <p>&copy; 2024 My Company. All rights reserved.</p>
-          </footer>
-        </div>
+          </div>
+        </section>
       );
     };
-    
-export default HomePage
+        
+export default HomePage;
