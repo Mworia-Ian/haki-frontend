@@ -62,6 +62,7 @@ export default function LoginPage() {
   };
 
   return (
+    <div className="login">
     <Container className="container">
       <div className="heading">Log In</div>
       <Form className="form" onSubmit={handleSubmit(onSubmit)}>
@@ -119,5 +120,6 @@ export default function LoginPage() {
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </Container>
+    </div>
   );
 }
