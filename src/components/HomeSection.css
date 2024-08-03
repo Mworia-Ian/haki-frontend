@@ -1,0 +1,78 @@
+/* Add styles specific to the HomeSection component */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    min-height: 100vh;
+    position: relative;
+    
+}
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+.home .wrapper {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+.home .wrapper h1{
+    color: #fff;
+    font-size: 2rem;
+}
+.home .wrapper p{
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+.home p {
+    font-size: 1.6rem;
+    color: #fff;
+}
+.home .buttons {
+    display: flex;
+    justify-content: center;
+}
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.status .box-container {
+    display: flex;
+    gap: 2rem;
+}
+.status .box {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.status .box h2 {
+    font-size: 3rem;
+    color: #6D3705;
+}
+.status .box p {
+    font-size: 1.4rem;
+    color: #333;
+}
+@media (max-width: 769px) {
+    .home{
+        height: 25rem;
+    }
+}
