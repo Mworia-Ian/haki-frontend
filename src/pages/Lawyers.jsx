@@ -16,7 +16,7 @@ function Lawyers({ lawyers = [] }) {
       lawyer.name.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredLawyers(filtered);
-    setNoResults(filtered.length === 0); // Update state based on search results
+    setNoResults(filtered.length === 0);
   };
 
   return (
