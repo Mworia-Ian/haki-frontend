@@ -10,7 +10,7 @@
 }
 .reviews .clients-reviews .review{
     padding: 1.5rem;
-    background: #fff;
+    background: rgba(250, 249, 249, 0.5);
     border: 1px solid #aaa;
     border-radius: 5px;
 }

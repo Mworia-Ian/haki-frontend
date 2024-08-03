@@ -14,7 +14,8 @@
 }
 .services .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 1rem;
     position: relative;
@@ -22,9 +23,10 @@
     justify-content: center;
     flex-wrap: wrap;
 
+
 }
 .services .box {
-    background: #fff;
+    background: rgba(109, 55, 5, 0.2);
     padding: 2rem;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -47,7 +49,7 @@
 }
 .services .box-container .box{
     padding: 1rem;
-    background: #fff;
+    background: rgba(250, 249, 249, 0.5);
     border: 1px solid #aaa;
 }
 .services .box-container .box h1{
