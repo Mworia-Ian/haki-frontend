@@ -10,14 +10,13 @@ function Lawyers({ lawyers = [] }) {
   const [filteredLawyers, setFilteredLawyers] = useState(lawyers);
 
   const handleSearch = (query) => {
-    console.log("Search Query:", query); // Logging search query
+    console.log("Search Query:", query); 
     const filtered = lawyers.filter(lawyer => 
       lawyer.name.toLowerCase().includes(query.toLowerCase()) ||
       lawyer.specialization.toLowerCase().includes(query.toLowerCase())
     );
-    console.log("Filtered Lawyers:", filtered); // Logging filtered lawyers
+    console.log("Filtered Lawyers:", filtered); 
     setFilteredLawyers(filtered);
-    // setAlertVisible(filtered.length === 0);
   };
 
   return (

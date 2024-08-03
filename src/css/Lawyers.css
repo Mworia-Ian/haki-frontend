@@ -32,16 +32,16 @@ h1 {
 }
 
 .sidebar.collapsed {
-    width: 50px;
+    width: 80px;
 }
 
 .sidebar .nav-link {
-    color: white; /* Set text color to white */
-    font-size: 1.1rem;
+    color: white; 
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 10px 20px;
+    padding: 15px 0px;
 }
 
 .sidebar .nav-link:hover {
@@ -49,16 +49,16 @@ h1 {
 }
 
 .sidebar .fa-icon {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     margin-right: 10px;
     transition: color 0.3s;
-    color: white; /* Set icon color to white */
+    color: white; 
 }
 
 .sidebar-toggle {
     background-color: transparent;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     position: absolute;
     width: 100%;
     text-align: left;
@@ -89,7 +89,7 @@ h1 {
     height: 260px;
     background-image: linear-gradient(144deg, #914F1E, #944041 60%);
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     padding-top: 10px;
     position: relative;
     margin: 0px 0px 0px 100px;
