@@ -1,0 +1,35 @@
+.reviews{
+    padding: 20px 50px;
+    margin-top: 1.5rem;
+}
+.reviews .clients-reviews{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.reviews .clients-reviews .review{
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.review .info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+.review .info img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.review .info .row h1{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.review .info .row span{
+    font-size: 12px;
+    color: #ec9f68;
+}
