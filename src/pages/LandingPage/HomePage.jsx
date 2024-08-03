@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+// import "./home.css";
 import arrowUpImg from "/src/assets/arrowUpImg.png";
 import clockImg from "/src/assets/clockImg.png";
 import courtImg from "/src/assets/courtImg.png";

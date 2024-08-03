@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -38,4 +55,38 @@ header {
     background: transparent;
     color: whitesmoke;
     border: 1px solid whitesmoke;
+}
+@media (max-width: 769px) {
+    .home{
+        height: 25rem;
+    }
+    .home header{
+        padding: 10px;
+    }
+    header .btn{
+        display: none;
+    }
+    header .menubtn{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 10%; left: 0; right: 0;
+        background: #fff;
+        padding: 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        display: block;
+        color: #202022;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    header .navbar a::before{
+        display: none;
+    }
 }
