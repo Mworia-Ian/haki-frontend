@@ -15,7 +15,7 @@ const Header = () => {
                 <a href="#">reviews</a>
                 <a href="#">contact</a>
             </nav>
-            <a href="#" className="btn">LOG IN</a>
+            <a href="/login" className="btn">LOG IN</a>
             <a href="#" className="btn">SIGN UP</a>
         </header>
     );

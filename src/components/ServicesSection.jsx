@@ -11,18 +11,18 @@ const ServicesSection = () => {
             </div>
             <div className="box-container">
                 <div className="box">
-                    <h1><span>C</span>orporate law</h1>
-                    <p>Corporate law is our main expertise. We have been doing this for almost 20 years. We will help you with everything related to your corporation and business.</p>
+                    <h1><span>C</span>riminal law</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quasi?</p>
                     <a href="#">Learn more <img src="src/assets/arrowUpImg.png" alt="Arrow" style={{ width: '.8rem', marginLeft: '5px' }} /></a>
                 </div>
                 <div className="box">
-                    <h1><span>C</span>ommercial law</h1>
-                    <p>Do you need help with the legal aspects of a trade? Do you want us to create and manage your contracts? We are here to help you in that.</p>
+                    <h1><span>F</span>amily law</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quasi?</p>
                     <a href="#">Learn more <img src="src/assets/arrowUpImg.png" alt="Arrow" style={{ width: '.8rem', marginLeft: '5px' }} /></a>
                 </div>
                 <div className="box">
                     <h1><span>T</span>ax law</h1>
-                    <p>Taxes, it is hard to understand everything about them. Don't worry. We are always standing by your side to ensure that everything is settled.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quasi?</p>
                     <a href="#">Learn more <img src="src/assets/arrowUpImg.png" alt="Arrow" style={{ width: '.8rem', marginLeft: '5px' }} /></a>
                 </div>
             </div>
