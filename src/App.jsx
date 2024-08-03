@@ -1,4 +1,6 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import ClientHomepage from './components/ClientHomepage';
 import Lawyers from './pages/Lawyers';
 import LawyerDetails from './components/LawyersDetails';
 
@@ -98,10 +100,13 @@ const dummyLawyers = [
 
 function App() {
   return (
-    <>
-      <Lawyers lawyers={dummyLawyers} />
-      <LawyerDetails lawyesr={dummyLawyers} />
-    </>
+   
+      <Routes>
+       <Route path="/" element={<ClientHomepage />} />
+       <Route path="/lawyers" element={<Lawyers lawyers={dummyLawyers} />} />
+       <Route path="/lawyers/:id" element={<LawyerDetails />} />
+      </Routes>
+   
   );
 }
 

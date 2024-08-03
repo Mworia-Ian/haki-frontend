@@ -1,3 +1,4 @@
+// Lawyers.jsx
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "../components/Header";
@@ -8,38 +9,41 @@ import '../css/Lawyers.css';
 
 function Lawyers({ lawyers = [] }) {
   const [filteredLawyers, setFilteredLawyers] = useState(lawyers);
+  const [noResults, setNoResults] = useState(false);
 
   const handleSearch = (query) => {
-    console.log("Search Query:", query); 
-    const filtered = lawyers.filter(lawyer => 
-      lawyer.name.toLowerCase().includes(query.toLowerCase()) ||
-      lawyer.specialization.toLowerCase().includes(query.toLowerCase())
+    const filtered = lawyers.filter((lawyer) =>
+      lawyer.name.toLowerCase().includes(query.toLowerCase())
     );
-    console.log("Filtered Lawyers:", filtered); 
     setFilteredLawyers(filtered);
+    setNoResults(filtered.length === 0); // Update state based on search results
   };
 
   return (
-    <Container>
-      <Header />
-      <LawyersNavbar />
-      <Row className="mt-3 search-container">
-        <Col>
-          <LawyersSearch onSearch={handleSearch} />
+    <Container fluid>
+      <Row>
+        <Col xs={2} className="bg-light">
+          <LawyersNavbar />
         </Col>
-      </Row>
-      <Row className="mt-3">
-        {filteredLawyers.length > 0 ? (
-          filteredLawyers.map((lawyer) => (
-            <Col key={lawyer.id} md={4} className="mb-5">
-              <LawyersCard lawyer={lawyer} />
-            </Col>
-          ))
-        ) : (
-          <Col className="d-flex justify-content-center align-items-center" style={{ height: '50vh' }}>
-            <p className="text-center" style={{ fontSize: '2.0rem' }}>No lawyers found.</p>
-          </Col>
-        )}
+        <Col xs={10} className="text-center text-md-left bg-light">
+          <Header />
+          <LawyersSearch onSearch={handleSearch} />
+          <Container>
+            <Row>
+              {noResults ? (
+                <Col className="text-center">
+                  <p className="text-dark" style={{ fontSize: "1.5rem", fontWeight: "bold" }}>Lawyer not found.</p>
+                </Col>
+              ) : (
+                filteredLawyers.map((lawyer) => (
+                  <Col md={6} lg={4} key={lawyer.id} className="mb-4">
+                    <LawyersCard lawyer={lawyer} />
+                  </Col>
+                ))
+              )}
+            </Row>
+          </Container>
+        </Col>
       </Row>
     </Container>
   );

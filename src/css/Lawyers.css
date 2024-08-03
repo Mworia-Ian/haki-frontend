@@ -4,7 +4,6 @@ body {
 }
 
 .header {
-    background-color: white;
     padding: 0px;
 }
 
@@ -90,7 +89,7 @@ h1 {
     border-radius: 20px;
     padding-top: 10px;
     position: relative;
-    margin: 0px 0px 0px 100px;
+    margin: 0px;
     font-family: inherit;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -166,13 +165,14 @@ h1 {
 .search-container {
     display: flex;
     align-items: flex-start;
-    margin-left: 1000px;
 }
 
 .search {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 30%;
+    margin: 20px 10px 15px 820px;
+
 }
 
 .search input[type="text"] {

@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Container, Row, Col, Button, Modal } from "react-bootstrap";
 
-function LawyerDetails({ lawyer }) {
+function LawyerDetails({ lawyers }) {
   const navigate = useNavigate();
+  const { id } = useParams();
   const [showModal, setShowModal] = useState(false);
+
+  // const lawyer = lawyers.find((lawyer) => lawyer.id === parseInt(id));
+  const lawyer = dummyLawyers.find((lawyer) => lawyer.id === parseInt(id, 10)); 
+  
 
   if (!lawyer) {
     return (
@@ -25,35 +30,18 @@ function LawyerDetails({ lawyer }) {
       </Button>
       <Row>
         <Col md={6}>
-          <div
-            className="lawyer-card"
-            style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}
-          >
+          <div className="lawyer-card" style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}>
             <img
               src={lawyer.image_url}
               alt={lawyer.name}
               className="lawyer-image"
-              style={{
-                width: "100%",
-                height: "auto",
-                maxHeight: "80vh",
-                borderRadius: "50%",
-              }}
+              style={{ width: "100%", height: "auto", maxHeight: "80vh", borderRadius: "50%" }}
             />
           </div>
         </Col>
         <Col md={6}>
-          <div
-            className="lawyer-card"
-            style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}
-          >
-            <h2
-              style={{
-                fontSize: "3.0rem",
-                fontWeight: "bold",
-                textDecoration: "underline",
-              }}
-            >
+          <div className="lawyer-card" style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}>
+            <h2 style={{ fontSize: "3.0rem", fontWeight: "bold", textDecoration: "underline" }}>
               {lawyer.name}
             </h2>
             <p style={{ fontSize: "1.8rem" }}>
@@ -70,8 +58,6 @@ function LawyerDetails({ lawyer }) {
             </p>
             <div className="mb-4">
               {/* Include additional components or actions related to lawyers here */}
-              {/* Example: <Review lawyerId={lawyer.id} /> */}
-              {/* Example: <ReserveLawyer lawyerId={lawyer.id} userId={1} /> */}
             </div>
           </div>
         </Col>
