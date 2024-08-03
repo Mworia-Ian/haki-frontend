@@ -200,3 +200,27 @@ h1 {
     color: rgb(255, 255, 255);
     background-color: #4e99e9;
 }
+
+/* ClientHomepage.css */
+.client-homepage-container {
+    margin-top: 100px; /* Adjust this value as needed based on the height of your navbar */
+  }
+  
+/* Lawyers.css */
+.paragraph-container {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .paragraph-container::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent; /* Adjust the size as needed */
+    border-right: 200px solid transparent; /* Adjust the size as needed */
+    border-bottom: 40px solid #fff; /* Background color of the container */
+    transform: translateX(-50%);
+  }
+  

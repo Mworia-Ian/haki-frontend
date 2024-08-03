@@ -7,9 +7,8 @@ function LawyerDetails({ lawyers }) {
   const { id } = useParams();
   const [showModal, setShowModal] = useState(false);
 
-  // const lawyer = lawyers.find((lawyer) => lawyer.id === parseInt(id));
-  const lawyer = dummyLawyers.find((lawyer) => lawyer.id === parseInt(id, 10)); 
-  
+  // Find the lawyer by ID
+  const lawyer = lawyers.find((lawyer) => lawyer.id === parseInt(id, 10)); 
 
   if (!lawyer) {
     return (
@@ -35,12 +34,12 @@ function LawyerDetails({ lawyers }) {
               src={lawyer.image_url}
               alt={lawyer.name}
               className="lawyer-image"
-              style={{ width: "100%", height: "auto", maxHeight: "80vh", borderRadius: "50%" }}
+              style={{ width: "90%", height: "auto", maxHeight: "100vh", borderRadius: "50%" }}
             />
           </div>
         </Col>
-        <Col md={6}>
-          <div className="lawyer-card" style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}>
+        <Row md={6}>
+          {/* <div className="lawyer-card" style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}> */}
             <h2 style={{ fontSize: "3.0rem", fontWeight: "bold", textDecoration: "underline" }}>
               {lawyer.name}
             </h2>
@@ -59,8 +58,8 @@ function LawyerDetails({ lawyers }) {
             <div className="mb-4">
               {/* Include additional components or actions related to lawyers here */}
             </div>
-          </div>
-        </Col>
+          {/* </div> */}
+        </Row>
       </Row>
       {/* Modal for additional actions */}
       <Modal show={showModal} onHide={() => setShowModal(false)}>

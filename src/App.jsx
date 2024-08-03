@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import ClientHomepage from './components/ClientHomepage';
+import ClientSubscription from './components/ClientSubscription';
 import Lawyers from './pages/Lawyers';
 import LawyerDetails from './components/LawyersDetails';
 
@@ -97,16 +98,14 @@ const dummyLawyers = [
   }
 ];
 
-
 function App() {
   return (
-   
-      <Routes>
-       <Route path="/" element={<ClientHomepage />} />
-       <Route path="/lawyers" element={<Lawyers lawyers={dummyLawyers} />} />
-       <Route path="/lawyers/:id" element={<LawyerDetails />} />
-      </Routes>
-   
+    <Routes>
+      <Route path="/" element={<ClientHomepage />} />
+      <Route path="/subscribe" element={<ClientSubscription />} />
+      <Route path="/lawyers" element={<Lawyers lawyers={dummyLawyers} />} />
+      <Route path="/lawyers/:id" element={<LawyerDetails lawyers={dummyLawyers} />} />
+    </Routes>
   );
 }
 

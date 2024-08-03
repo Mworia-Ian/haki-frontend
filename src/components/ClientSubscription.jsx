@@ -1,38 +1,26 @@
 import React from 'react';
-import { Card, Button, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Container, Card, Button } from 'react-bootstrap';
+import LawyersNavbar from '../components/LawyersNavbar';
+import '../css/Lawyers.css';
 
-const ClientSubscription = () => {
+function ClientSubscription() {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Body>
-        <Card.Title>Subscription Plan</Card.Title>
-        <Card.Text>
-          Enjoy unlimited access to our premium content with this subscription plan.
-        </Card.Text>
-        <Card.Text>
-          <strong>Price:</strong> $9.99/month
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroupItem>Pay with:</ListGroupItem>
-        <ListGroupItem>
-          <Button variant="outline-primary" className="w-100 mb-2">
-            Mpesa
-          </Button>
-        </ListGroupItem>
-        <ListGroupItem>
-          <Button variant="outline-primary" className="w-100 mb-2">
-            PayPal
-          </Button>
-        </ListGroupItem>
-        <ListGroupItem>
-          <Button variant="outline-primary" className="w-100">
-            Visa Card
-          </Button>
-        </ListGroupItem>
-      </ListGroup>
-    </Card>
+    <div>
+      <LawyersNavbar />
+      <Container className="text-center mt-5">
+        <h1 className="mb-4">Subscribe to Our Service</h1>
+        <Card className="subscription-card mx-auto" style={{ width: '50%' }}>
+          <Card.Body>
+            <Card.Title>Premium Subscription</Card.Title>
+            <Card.Text>
+              Get access to exclusive content and features by subscribing to our premium service. Enjoy additional benefits and stay updated with the latest in the legal field.
+            </Card.Text>
+            <Button variant="primary">Subscribe Now</Button>
+          </Card.Body>
+        </Card>
+      </Container>
+    </div>
   );
-};
+}
 
 export default ClientSubscription;
