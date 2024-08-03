@@ -12,16 +12,21 @@
   }
   
   .modal-container {
-    max-height: 400px;
+    position: relative;
     max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 300%;
+    margin:  auto;
+    padding: 20px 35px;
     background-color: rgba(109, 55, 5, 0.4);
-    border-radius: 16px;
+    border-radius: 80px;
+    box-shadow: 0 2px 4px rgba(109, 55, 5, 0.9);
+    z-index: 1;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+    
   }
   
   .modal-container-header {
@@ -69,13 +74,22 @@
     cursor: pointer;
   }
   
-  .button.is-ghost {
+  .button.is-primary:hover {
     background: transparent;
-    color: #291707;
+    color: white;
+    transform: scale(1.2);
   }
   
   .button.is-primary {
-    background: #007bff;
+    background-color: #6D3705;
+    border: none;
     color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    margin-top: 15px;
   }
   
