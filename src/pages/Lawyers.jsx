@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import Header from "../components/Header";
+import Header from "../components/Header";
 import LawyersCard from "../components/LawyersCard";
 import LawyersNavbar from "../components/LawyersNavbar";
 import LawyersSearch from "../components/LawyersSearch";
@@ -22,7 +22,7 @@ function Lawyers({ lawyers = [] }) {
 
   return (
     <Container>
-      {/* <Header /> */}
+      <Header />
       <LawyersNavbar />
       <Row className="mt-3 search-container">
         <Col>
