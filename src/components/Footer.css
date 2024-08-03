@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
+    color: #fff;
+    background: #ec9f68;
 }
 .footer a{
     color: #202022;
