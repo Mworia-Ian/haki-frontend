@@ -3,12 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1rem;
-    color: #fff;
-    background: #ec9f68;
+    gap: 1rem;
+    background: rgba(250, 249, 248, 0.2);
+    color: #aaa;
 }
 .footer a{
-    color: #202022;
+    color: #fff;
     font-size: 18px;
 }
 .copy{
@@ -20,7 +20,7 @@
 .logo{
     color: #fff;
     font-size: 3rem;
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 .logo span{
     color: #ec9f68;

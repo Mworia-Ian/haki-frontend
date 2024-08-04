@@ -3,18 +3,49 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
-    margin-top: 1rem;
     background: rgba(250, 249, 248, 0.2);
     color: #aaa;
 }
-.contactinfo .box{
+.contactinfo .box {
     padding: 1.5rem;
     border: 1px solid #aaa;
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.contactinfo .box h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.contactinfo .box p{
+    font-size: 1rem;
+    color: #aaa;
+    margin: 0 0 1rem 0;
+    
 }
 .contactinfo .box span{
     color: #ec9f68;
     padding: 10px 0;
+}
+.contactinfo .box a{
+    color: #202022;
+    font-size: 1rem;
+    padding: 10px;
+}
+  .contactinfo .box a:visited {
+    color: #202022;
+  }
+.contactinfo .box a:hover {
+    color: #ec9f68;
+  }
+.contactinfo .box img{
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    
 }

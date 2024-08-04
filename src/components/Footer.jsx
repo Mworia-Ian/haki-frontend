@@ -5,9 +5,14 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer">
-        <h3>Haki <span>APP</span></h3>
-        <p>&copy; 2024 Haki App. All rights reserved.</p>
+        <>
+        <a href="#" className='logo'>Haki <span>APP</span></a>
+        </>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Sitemap</a>
       </div>
+      <div className="copy">&copy; Haki APP | 2024 All rights reserved.</div>
     </footer>
   );
 };
