@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 4rem;
     background: rgba(250, 249, 248, 0.2);
     color: #aaa;
 }
@@ -19,7 +19,7 @@
 }
 .logo{
     color: #fff;
-    font-size: 3rem;
+    font-size: 5rem;
     /* margin-right: auto; */
 }
 .logo span{

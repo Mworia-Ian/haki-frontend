@@ -1,21 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    position: relative;
-    overflow-x: hidden;
-}
 
-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,29 +10,34 @@ header {
     width: 100%;
     background-color: #202022;
 }
-header .logo{
+.header a{
+    color: #fff;
+    font-size: 18px;
+}
+.logo{
     color: #fff;
     font-size: 3rem;
     margin-right: auto;
 }
-header .logo span{
+.logo span{
     color: #ec9f68;
+    font-size: 25px;
 }
-header .menubtn{
+.header .menubtn{
     cursor: pointer;
     margin-right: 15px;
     display: none;
 }
-header .menubtn img{
+.header .menubtn img{
     filter: invert(1);
 }
-header .navbar a{
+.header .navbar a{
     color: #fff;
     text-transform: uppercase;
     margin-right: 15px;
     position: relative;
 }
-header .navbar a::before{
+.header .navbar a::before{
     content: '';
     position: absolute;
     bottom: -2px;
@@ -57,7 +46,7 @@ header .navbar a::before{
     background: #ec9f68;
     transition: .2s linear;
 }
-header .navbar a:hover::before{
+.header .navbar a:hover::before{
     width: 100%;
 }
 

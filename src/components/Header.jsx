@@ -4,7 +4,8 @@ import './Header.css';
 const Header = () => {
     return (
         <header>
-            <a href="/" className="logo">Haki <span>APP</span></a>
+            <div className="header">
+            <a href="/" className="logo"><span>H</span>aki <span>APP</span></a>
             <div className="menubtn">
                 <img src="images/menu.svg" alt="Menu" />
             </div>
@@ -16,6 +17,7 @@ const Header = () => {
             <a href="/login" className="btn">LOG IN</a>
             
             <a href="/signup" className="btn">SIGN UP</a>
+            </div>
         </header>
     );
 };
