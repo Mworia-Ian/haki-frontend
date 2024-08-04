@@ -6,10 +6,10 @@ const HomeSection = () => {
         <section className="home">
             <div className="wrapper">
                 <h1>Legal Counsels for our Clients</h1>
-                <p>We help our Clients navigate the legal landscape.</p>
+                <p>We help connect our Clients with Advocate to navigate the legal landscape.</p>
                 <div className="buttons">
                     <a href="/contact" className="btn">Contact us</a>
-                    <a href="/about" className="btn2">About us</a>
+                    {/* <a href="/about" className="btn2">About us</a> */}
                 </div>
             </div>
             <div className="status">

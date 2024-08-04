@@ -69,7 +69,7 @@ header .navbar a:hover::before{
     cursor: pointer;
     text-transform: uppercase;
     margin: 0 0.5rem;
-    gap: 1rem;
+    gap: 2rem;
     transform: 1.2;
 }
 

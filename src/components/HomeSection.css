@@ -46,23 +46,7 @@
     display: flex;
     justify-content: center;
 }
-.btn2{
-    padding: 8px 15px;
-    color: #ec9f68;
-    border: 2px solid #fff;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin: 0 0.5rem;
-    gap: 1rem;
-    transform: 1.2;
-}
 
-.btn2:hover {
-    background: transparent;
-    color: whitesmoke;
-    border: 1px solid whitesmoke;
-}
 .status {
     display: flex;
     align-items: center;
@@ -75,16 +59,17 @@
     bottom: -50px;
     text-transform: capitalize;
 }
-.status .box-container {
-    display: flex;
-    gap: 2rem;
+.status .box-container{
+    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    gap: 1.5rem;
 }
-.status .box {
+.status .box-container .box{
+    padding: 20px;
     text-align: center;
     background: #fff;
-    padding: 2rem;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    width: 100%;
 }
 .status .box-container .box h2 {
     font-size: 3rem;
@@ -93,6 +78,9 @@
 .status .box-container .box p {
     font-size: 1.4rem;
     color: #333;
+    padding: 10px 0;
+    max-width:max-content;
+    margin: 0 auto;
 }
 .btn {
     padding: 10px 15px;
@@ -103,10 +91,28 @@
     text-transform: uppercase;
     margin: 0 0.5rem;
     gap: 1rem;
-    transform: 1.2;
+    transform: scale(1.2);
 }
 
 .btn:hover {
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+.btn2{
+    padding: 8px 15px;
+    color: #ec9f68;
+    border: 2px solid #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    gap: 1rem;
+    transform: scale(1.2);
+}
+
+.btn2:hover {
     background: transparent;
     color: whitesmoke;
     border: 1px solid whitesmoke;
