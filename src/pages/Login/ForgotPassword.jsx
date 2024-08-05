@@ -10,6 +10,7 @@ const schema = z.object({
   email: z.string().email({ message: "Enter a valid email address" }).min(1, { message: "Email address is required" }),
 });
 
+
 export default function ForgotPassword() {
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: zodResolver(schema),
