@@ -11,7 +11,8 @@
 }
 .header a{
     color: #fff;
-    font-size: 18px;
+    font-size: 25px;
+    text-decoration: none;
 }
 .logo{
     color: #fff;
@@ -20,7 +21,7 @@
 }
 .logo span{
     color: #ec9f68;
-    font-size: 25px;
+    font-size: 35px;
 }
 .header .menubtn{
     cursor: pointer;
