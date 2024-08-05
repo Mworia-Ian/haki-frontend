@@ -224,3 +224,26 @@ h1 {
     transform: translateX(-50%);
   }
   
+  /* Lawyers.css */
+.subscription-card {
+    padding: 30px; /* Increase padding for more space */
+    border-radius: 10px; /* Optional: rounded corners */
+    height: 500px;
+
+  }
+  
+  .payment-option {
+    margin: 10px 0;
+  }
+  
+  .payment-option button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+  
+  .payment-option svg {
+    margin-right: 10px;
+  }
+  
