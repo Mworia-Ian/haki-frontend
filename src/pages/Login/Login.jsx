@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { Form, Button, Container } from "react-bootstrap";
 import Modal from "./Modal"; // Import the Modal component
-import "./login.css";
+import "../../css/login.css";
 
 const schema = z.object({
   email: z

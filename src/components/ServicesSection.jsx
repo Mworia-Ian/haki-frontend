@@ -1,6 +1,6 @@
 import React from 'react';
 import arrowUpImg from '../assets/arrowUpImg.png';
-import './ServicesSection.css';
+import '../css/ServicesSection.css';
 
 const ServicesSection = () => {
     const services = [

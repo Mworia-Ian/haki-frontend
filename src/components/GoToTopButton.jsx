@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './GoToTopButton.css';
+import '../css/GoToTopButton.css';
 import arrowUpImg from '/src/assets/arrowUpImg.png';
 
 const GoToTopButton = () => {

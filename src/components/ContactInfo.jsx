@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContactInfo.css';
+import '../css/ContactInfo.css';
 import courtImg from '/src/assets/courtImg.png';
 import phoneImg from '/src/assets/phoneImg.png';
 import emailImg from '/src/assets/emailImg.png';

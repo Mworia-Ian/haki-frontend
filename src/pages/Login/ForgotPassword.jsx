@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import toast from "react-hot-toast";
 import { Form, Button, Container } from "react-bootstrap";
-import "./forgotPassword.css";
+import "../../css/forgotPassword.css";
 
 const schema = z.object({
   email: z.string().email({ message: "Enter a valid email address" }).min(1, { message: "Email address is required" }),

@@ -1,5 +1,5 @@
 import React from 'react';
-import './ReviewsSection.css';
+import '../css/ReviewsSection.css';
 
 const reviews = [
   {
