@@ -1,0 +1,75 @@
+/* Add styles specific to the ServicesSection component */
+.services {
+    text-align: center;
+    background: rgba(109, 55, 5, 0.2);
+}
+.services .heading span {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+.services .heading h3 {
+    font-size: 4rem;
+    color: whitesmoke;
+    margin: 1rem 0;
+}
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    padding: .5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+.services .box {
+    background: rgba(109, 55, 5, 0.2);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.services .box-container::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #ec9f68;
+    height: 5rem;width: 5rem;
+    top: -10px;left: -10px;
+}
+.services .box-container::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #ec9f68;
+    height: 5rem;width: 5rem;
+    bottom: -10px;right: -10px;
+}
+.services .box-container .box{
+    padding: 1rem;
+    background: rgba(250, 249, 249, 0.5);
+    border: 1px solid #aaa;
+}
+.services .box-container .box h1{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #202022;
+}
+.services .box-container .box h1 span{
+    font-size: 2rem;
+    color: #ec9f68;
+}
+.services .box-container .box p{
+    font-size: 14px;
+    font-weight: 300;
+    padding: .5rem 0;
+}
+.services .box-container .box a{
+    display: flex;
+    align-items: center;
+    color: #202022;
+    margin-top: 0.4rem;
+}

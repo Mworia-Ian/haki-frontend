@@ -1,0 +1,28 @@
+.footer{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    background: rgba(250, 249, 248, 0.2);
+    color: #aaa;
+}
+.footer a{
+    color: #fff;
+    font-size: 18px;
+}
+.copy{
+    background: #ec9f68;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+}
+.logo{
+    color: #fff;
+    font-size: 5rem;
+    /* margin-right: auto; */
+}
+.logo span{
+    color: #ec9f68;
+    font-size: 25px;
+}

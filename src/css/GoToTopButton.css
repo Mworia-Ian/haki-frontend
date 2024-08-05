@@ -1,0 +1,21 @@
+.gotop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 1.9rem;
+    width: 1.9rem;
+    line-height: 1.9rem;
+    border-radius: 3px;
+    background: #ec9f68;
+    text-align: center;
+    display: none;
+}
+.gotop img{
+    height: 1.5rem;
+    width: 1.5rem;
+    object-fit: cover;
+    filter: invert(1);
+}
+.gotop.active{
+    display: block;
+}

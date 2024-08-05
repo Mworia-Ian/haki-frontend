@@ -1,21 +1,25 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import "../css/Lawyers.css";
+import '../css/Header.css';
 
-function Header() {
-  return (
-    <div className="header">
-    <Container>
-      <Row className="justify-content-center">
-        <Col xs="auto">
-          <h1 className="text-center" style={{ color: 'black', textDecoration: 'underline' }}>
-            LAWYERS
-          </h1>
-        </Col>
-      </Row>
-    </Container>
-  </div>
-  );
-}
+const Header = () => {
+    return (
+        <header>
+            <div className="header">
+            <a href="/" className="logo"><span>H</span>aki <span>APP</span></a>
+            <div className="menubtn">
+                <img src="images/menu.svg" alt="Menu" />
+            </div>
+            <nav className="navbar">
+                {/* <a href="/services">services</a>
+                <a href="/reviews">reviews</a>
+                <a href="/contact">contact</a> */}
+            </nav>
+            <a href="/login" className="btn">LOG IN</a>
+            
+            <a href="/signup" className="btn">SIGN UP</a>
+            </div>
+        </header>
+    );
+};
 
 export default Header;

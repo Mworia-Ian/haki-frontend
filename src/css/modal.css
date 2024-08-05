@@ -1,0 +1,132 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+  }
+  
+  .modal-container {
+    position: relative;
+    max-width: 500px;
+    width: 300%;
+    margin: 0 auto;
+    padding: 20px 35px;
+    background-color: rgba(109, 55, 5, 0.4);
+    border-radius: 80px;
+    box-shadow: 0 2px 4px rgba(109, 55, 5, 0.9);
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .modal-container-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  
+  .modal-container-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #ddd;
+  }
+
+  .modal-container-body{
+    color: #ddd;
+    padding: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+    
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .modal-container-body {
+    padding: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .modal-container-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+   
+  }
+
+.modal-container-body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .modal-container-body::-webkit-scrollbar-track {
+    background: #1e1e1e; 
+    border-radius: 10px; 
+  }
+  
+  .modal-container-body::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgba(109, 55, 5, 0.9)); 
+    border-radius: 10px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-container-body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, rgba(109, 55, 5, 0.9),rgba(109, 55, 5, 0.9)); 
+  }
+  
+  
+  .modal-container-body {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(109, 55, 5, 0.9) #1e1e1e;
+  }
+
+  .modal-container-body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  
+  .button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button.is-primary:hover {
+    background: transparent;
+    color: white;
+    transform: scale(1.2);
+  }
+  
+  .button.is-primary {
+    background-color: #6D3705;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    margin-top: 15px;
+  }
+  
