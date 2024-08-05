@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #914F1E, #944041);
+    border-right: 1px solid #dee2e6;
+    z-index: 1000;
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar .nav-link {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 15px 0px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #eecaaf;
+}
+
+.sidebar .fa-icon {
+    font-size: 2.0rem;
+    margin-right: 10px;
+    transition: color 0.3s;
+    color: white;
+}
+
+.sidebar-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 2.0rem;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    color: white;
+}
+
+.sidebar .nav {
+    margin-top: 50px;
+}
+
+.collapsed .nav-link {
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.collapsed .nav-link .fa-icon {
+    margin-right: 0;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.card {
+    width: 350px;
+    height: 260px;
+    background-image: linear-gradient(144deg, #914F1E, #944041 60%);
+    border: none;
+    border-radius: 20px;
+    padding-top: 10px;
+    position: relative;
+    margin: 0px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+
+.card .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1em;
+}
+
+.card .img {
+    width: 100px;
+    height: 100px;
+    background: #e8e8e8;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #e8e8e8;
+    color: #111111;
+    font-weight: 600;
+}
+
+.card button:hover {
+    background: #212121;
+    color: #ffffff;
+}
+
+.custom-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-card-body {
+    flex: 1;
+    color: white !important;
+    text-align: center;
+}
+
+.custom-card-img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 10px;
+    border: 5px solid #e8e8e8;
+}
+
+.search-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 20px 10px 15px 820px;
+
+}
+
+.search input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search button[type="submit"] {
+    background-image: linear-gradient(144deg, #914F1E, #944041 60%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: -60px;
+    transition: .9s ease;
+}
+
+.search button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: #4e99e9;
+}
+
+/* ClientHomepage.css */
+.client-homepage-container {
+    margin-top: 100px; /* Adjust this value as needed based on the height of your navbar */
+  }
+  
+/* Lawyers.css */
+.paragraph-container {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .paragraph-container::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent; /* Adjust the size as needed */
+    border-right: 200px solid transparent; /* Adjust the size as needed */
+    border-bottom: 40px solid #fff; /* Background color of the container */
+    transform: translateX(-50%);
+  }
+  
+  /* Lawyers.css */
+.subscription-card {
+    padding: 30px; /* Increase padding for more space */
+    border-radius: 10px; /* Optional: rounded corners */
+    height: 500px;
+
+  }
+  
+  .payment-option {
+    margin: 10px 0;
+  }
+  
+  .payment-option button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+  
+  .payment-option svg {
+    margin-right: 10px;
+  }
+  
