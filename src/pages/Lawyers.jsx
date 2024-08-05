@@ -1,7 +1,7 @@
 // Lawyers.jsx
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Header from "../components/Header";
+import LawyerHeader from "../components/LawyerHeader";
 import LawyersCard from "../components/LawyersCard";
 import LawyersNavbar from "../components/LawyersNavbar";
 import LawyersSearch from "../components/LawyersSearch";
@@ -26,7 +26,7 @@ function Lawyers({ lawyers = [] }) {
           <LawyersNavbar />
         </Col>
         <Col xs={10} className="text-center text-md-left bg-light">
-          <Header />
+          <LawyerHeader />
           <LawyersSearch onSearch={handleSearch} />
           <Container>
             <Row>

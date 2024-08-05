@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import "../css/Lawyers.css";
 
-function Header() {
+function LawyerHeader() {
   return (
     <div className="header">
     <Container>
@@ -18,4 +18,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default LawyerHeader;
