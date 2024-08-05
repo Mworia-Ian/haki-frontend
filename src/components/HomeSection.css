@@ -91,7 +91,7 @@
     text-transform: uppercase;
     margin: 0 0.5rem;
     gap: 1rem;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
 }
 
 .btn:hover {
@@ -109,7 +109,7 @@
     text-transform: uppercase;
     margin: 0 0.5rem;
     gap: 1rem;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 .btn2:hover {

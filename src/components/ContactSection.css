@@ -50,7 +50,7 @@
     text-transform: uppercase;
     margin: 0 0.5rem;
     gap: 1rem;
-    transform: 1.2;
+    /* transform: 1.2; */
 }
 
 .btn:hover {
