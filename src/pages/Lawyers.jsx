@@ -1,4 +1,3 @@
-// Lawyers.jsx
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LawyerHeader from "../components/LawyerHeader";
@@ -13,7 +12,7 @@ function Lawyers({ lawyers = [] }) {
 
   const handleSearch = (query) => {
     const filtered = lawyers.filter((lawyer) =>
-      lawyer.name.toLowerCase().includes(query.toLowerCase())
+      lawyer.specialization.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredLawyers(filtered);
     setNoResults(filtered.length === 0);
