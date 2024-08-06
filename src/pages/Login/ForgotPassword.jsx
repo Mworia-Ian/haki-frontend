@@ -42,6 +42,7 @@ export default function ForgotPassword() {
   };
 
   return (
+    <div className="forgot-password">
     <Container className="forgot-password-container">
       <h2>Forgot Password</h2>
       <Form onSubmit={handleSubmit(onSubmit)}>
@@ -59,5 +60,6 @@ export default function ForgotPassword() {
         </Button>
       </Form>
     </Container>
+    </div>
   );
 }
