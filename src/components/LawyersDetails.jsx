@@ -7,7 +7,6 @@ function LawyerDetails({ lawyers }) {
   const { id } = useParams();
   const [showModal, setShowModal] = useState(false);
 
-  // Find the lawyer by ID
   const lawyer = lawyers.find((lawyer) => lawyer.id === parseInt(id, 10)); 
 
   if (!lawyer) {
