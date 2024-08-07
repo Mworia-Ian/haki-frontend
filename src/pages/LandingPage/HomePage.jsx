@@ -11,17 +11,17 @@ import ContactInfo from "../../components/ContactInfo";
 
 const HomePage = () => {
   return (
-<>
-<Header/>
-<HomeSection/>
-<AboutSection/>
-<ServicesSection/>
-<ReviewsSection/>
-<ContactSection/>
-<ContactInfo/>
-<Footer/>
-<GoToTopButton/>
-</>
+    <>
+      <Header />
+      <HomeSection />
+      <AboutSection />
+      <ServicesSection />
+      <ReviewsSection />
+      <ContactSection />
+      <ContactInfo />
+      <Footer />
+      <GoToTopButton />
+    </>
   );
 };
 
