@@ -1,0 +1,119 @@
+/* Add styles specific to the HomeSection component */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    min-height: 100vh;
+    position: relative;
+    
+}
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+.home .wrapper {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+.home .wrapper h1{
+    color: #fff;
+    font-size: 2rem;
+}
+.home .wrapper p{
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+.home p {
+    font-size: 1.6rem;
+    color: #fff;
+}
+.home .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    text-transform: capitalize;
+}
+.status .box-container{
+    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    gap: 1.5rem;
+}
+.status .box-container .box{
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    width: 100%;
+}
+.status .box-container .box h2 {
+    font-size: 3rem;
+    color: #6D3705;
+}
+.status .box-container .box p {
+    font-size: 1.4rem;
+    color: #333;
+    padding: 10px 0;
+    max-width:max-content;
+    margin: 0 auto;
+}
+.btn {
+    padding: 10px 15px;
+    background: #ec9f68;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    gap: 1rem;
+    /* transform: scale(1.2); */
+}
+
+.btn:hover {
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+.btn2{
+    padding: 8px 15px;
+    color: #ec9f68;
+    border: 2px solid #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    gap: 1rem;
+    /* transform: scale(1.1); */
+}
+
+.btn2:hover {
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}

@@ -1,0 +1,167 @@
+.login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    /* backdrop-filter: blur(10px); */
+  }
+  
+/* Container */
+.container {
+    position: relative;
+    max-width: 500px;
+    width: 300%;
+    margin: 0 auto;
+    padding: 20px 35px;
+    background-color: rgba(109, 55, 5, 0.4);
+    border-radius: 80px;
+    box-shadow: 0 2px 4px rgba(109, 55, 5, 0.9);
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading */
+.heading {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(252, 252, 252);
+}
+
+/* Form */
+.form {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+/* Input Fields */
+.input {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding:15px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+    border-inline: 2px solid transparent;
+    
+}
+
+/* Forgot Password Text */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
+}
+
+.forgot-password a {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-button {
+    background-color: #6D3705;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50%;
+    transition: all 0.2s ease-in-out;
+    margin-top: 15px;
+}
+
+.login-button:hover {
+    background-color: #291707;
+}
+
+/* Social Accounts Container */
+.social-account-container {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Social Accounts Title */
+.title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: rgb(170, 170, 170);
+}
+
+/* Social Buttons */
+.social-accounts {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
+    cursor: pointer;
+}
+.social-button:hover {
+    background-color: #d3d3d3;
+    
+    }
+.social-button:active{
+    transform: scale(0.9);
+}
+
+/* Social Button SVG */
+.svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    margin: auto;
+}
+
+/* Agreement Text */
+.agreement {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    color: rgb(170, 170, 170);
+}
+
+.agreement a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+
+.agreement a:hover {
+    text-decoration: none;
+}

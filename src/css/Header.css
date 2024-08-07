@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    background-color: #202022;
+    text-decoration: none;
+}
+.header a{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+}
+.logo{
+    color: #fff;
+    font-size: 3rem;
+    margin-right: auto;
+}
+.logo span{
+    color: #ec9f68;
+    font-size: 35px;
+}
+.header .menubtn{
+    cursor: pointer;
+    margin-right: 15px;
+    display: none;
+}
+.header .menubtn img{
+    filter: invert(1);
+}
+.header .navbar a{
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 15px;
+    position: relative;
+}
+.header .navbar a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background: #ec9f68;
+    transition: .2s linear;
+}
+.header .navbar a:hover::before{
+    width: 100%;
+}
+
+/* .btn {
+    padding: 10px 15px;
+    background: #ec9f68;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    gap: 2rem;
+    transform: 1.2;
+} */
+
+.btn:hover {
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+/* @media (max-width: 769px) {
+    .home{
+        height: 25rem;
+    }
+    .home header{
+        padding: 10px;
+    }
+    header .btn{
+        display: none;
+    }
+    header .menubtn{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 10%; left: 0; right: 0;
+        background: #fff;
+        padding: 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        display: block;
+        color: #202022;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    header .navbar a::before{
+        display: none;
+    }
+} */
