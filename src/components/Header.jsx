@@ -10,9 +10,9 @@ const Header = () => {
                 <img src="images/menu.svg" alt="Menu" />
             </div>
             <nav className="navbar">
-                {/* <a href="/services">services</a>
+                <a href="/services">services</a>
                 <a href="/reviews">reviews</a>
-                <a href="/contact">contact</a> */}
+                <a href="/contact">contact</a>
             </nav>
             <a href="/login" className="btn">LOG IN</a>
             
